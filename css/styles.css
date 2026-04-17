@@ -41,28 +41,86 @@ a {
 /*-------------------------------------------
   ヘッダー
   -------------------------------------------*/
-
+header {
+  display: flex;
+  align-items: center;
+}
+header img {
+  width: 60px;
+  margin: 10px;
+}
+nav {
+  margin-left: auto;
+}
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+header li a:hover {
+  opacity: 0.7;
+}
 
 /*-------------------------------------------
   メインビジュアル
   -------------------------------------------*/
-
-
+main > img {
+  width: 100%;
+  height: 640px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+main h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
 /*-------------------------------------------
   セクション 共通部分
   -------------------------------------------*/
-
+h1 {
+  border-bottom: 1px solid #383e45;
+  width: fit-content;
+  margin: 0 auto 40px;
+}
 
 /* -------------------------------------------
   プロフィール
   -------------------------------------------*/
-
+.profile {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+}
+.profile > img {
+  border-radius: 50%;
+}
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
 /* -------------------------------------------
   記事
   -------------------------------------------*/
-
-
+.sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px 16px;
+}
+.sections section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sections section img {
+  width: 100%;
+}
 /*-------------------------------------------
   フッター
   -------------------------------------------*/
+footer {
+  padding:40px 0;
+  font-size: small;
+  text-align: center;
+}
